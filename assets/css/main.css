@@ -24,7 +24,7 @@
   }
  
   
-  
+
 /*--------------------------------------------------------------
 # Navbar
 --------------------------------------------------------------*/
@@ -45,8 +45,9 @@
 }
 .custom-tab.active {
     background: transparent !important;
-    color: #007bff !important;
-    border-bottom: 2px solid #007bff !important;
+    color: #39f!
+    ;
+    border-bottom: 2px solid #39f!important;
     border-radius: 0px !important;
 }
 
@@ -229,7 +230,7 @@ section {
     position: relative;
     top: 30px;
     left: 50px;
-    background-color: #0066FF;
+    background-color: #39f!important;
     height: 90px;
     width: 20px;
     z-index: 1;
@@ -270,7 +271,7 @@ section {
 }
 .about .message{
     font-weight: 600;
-    color: #0066FF;
+    color: #39f!important;
 }
 .about .blink{
    
@@ -310,6 +311,7 @@ section {
   background-position: center center;
   background-size: cover;
   position: relative;
+  z-index: -2;
 }
 
 
