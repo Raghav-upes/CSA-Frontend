@@ -1,7 +1,7 @@
 
 (function () {
     "use strict";
-  
+    
     /**
      * Easy selector helper function
      */
@@ -252,3 +252,9 @@
     });
   
   })()
+
+
+  function IsClicked(x) {
+    console.log("hello");
+  x.classList.toggle("is-clicked");
+}
