@@ -1,0 +1,20 @@
+.nav-item{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.nav-link{
+    color: grey;
+}
+.nav-link:hover{
+    color: #007bff;
+    transition: all 100ms ease-in;
+}
+.div{
+    background-color: aqua;
+}
+.custom-tab.active {
+    background: transparent !important;
+    color: #007bff !important;
+    border-bottom: 2px solid #007bff !important;
+    border-radius: 0px !important;
+}
