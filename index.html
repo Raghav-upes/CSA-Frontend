@@ -22,53 +22,168 @@
 
     <!--Main Styles-->
     <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
 
     <title>Home</title>
 </head>
 
-<body style="height: 1000px;">
-    <nav class="navbar fixed-top navbar-expand-sm bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="/assets/img/favicon/favicon.png" alt="Bootstrap" width="65"
-                    height="65" class="d-inline-block align-top"></a>
-            <div class="collapse navbar-collapse" id="navNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active custom-tab"
-                            href="index.html"><strong>Home</strong></a></li>
-                    <li class="nav-item"><a class="nav-link custom-tab" href="about"><strong>About</strong></a></li>
-                    <li class="nav-item"><a class="nav-link custom-tab" href="journey"><strong>Journey</strong></a></li>
-                    <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Team</strong></a></li>
-                    <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Alliance</strong></a></li>
-                    <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Alumni</strong></a></li>
-                    <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Events</strong></a></li>
-                    <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Contact</strong></a></li>
-                </ul><a id="Register" class="btn btn-primary shadow" role="button" href="#"><strong>Register</strong></a>
+<body>
+
+
+    <!-- ===========HEADER==========-->
+    <header id="header">
+        <nav class="navbar  navbar-expand-sm bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/assets/img/favicon/favicon.png" alt="Bootstrap" width="65"
+                        height="65" class="d-inline-block align-top"></a>
+                <div class="collapse navbar-collapse" id="navNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link active custom-tab"
+                                href="index.html"><strong>Home</strong></a></li>
+                        <li class="nav-item"><a class="nav-link custom-tab" href="#about"><strong>About</strong></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link custom-tab" href="journey"><strong>Journey</strong></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Team</strong></a></li>
+                        <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Alliance</strong></a></li>
+                        <li class="nav-item"><a class="nav-link custom-tab" href="#alumni"><strong>Alumni</strong></a></li>
+                        <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Events</strong></a></li>
+                        <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Contact</strong></a></li>
+                    </ul><a id="Register" class="btn btn-primary shadow" role="button"
+                        href="#"><strong>Register</strong></a>
+                </div>
+                <a class="mobile-nav-menu-toggle" href="#" onclick="IsClicked(this)"><span>Menu</span></a>
             </div>
-            <a class="mobile-nav-menu-toggle" href="#" onclick="IsClicked(this)"><span>Menu</span></a>
+        </nav>
+    </header>
+<!--========= Header End========-->
+
+
+<!-- About Section-->
+    <section id="about">
+        <div class="about">
+            <div class="abt-main-div">
+                <div class="r-dcap"></div>
+                <h1 class="heading">About us</h1>
+                <p class="content">
+                    With the vision of redefining excellence, Cloud Security Alliance (CSA) embarked upon its glorious
+                    journey as the youngest and first-ever domain-centric student chapter in UPES in 2017. CSA student
+                    chapter is zealously dedicated to raising awareness of best practices to help ensure a secure cloud
+                    computing environment, in association with Cloud Security Alliance, Uttarakhand. In the pursuit of
+                    its
+                    aim, the student chapter has been reputed as a pinnacle of success, which is evident through the
+                    plethora of opportunities provided such as technology-centered workshops, technical events, and fun
+                    fests. “A community of learners, innovators, and champions of our own success”, quoting this,
+                    UPES-CSA
+                    strives to nurture its community of student innovators with immense knowledge.
+                </p>
+                <h4>We are <span class="message"></span><span class="blink">&nbsp;</span></h4>
+            </div>
+            <div class="image">
+                <img src="/assets/img/about.jpg" class="abt-img">
+            </div>
         </div>
+    </section>
+<!--About End-->
+
+    <!-- ======= alumni Section ======= -->
+    <section id="alumni" class="alumni">
+        <div class="container" data-aos="zoom-in" >
+            <div class="quote-icon">
+                <i class="bx bxs-quote-right"></i>
+            </div>
+
+            <div class="alumni-slider swiper" data-aos="fade-up" data-aos-delay="100" >
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="alumni-item">
+                            <p>
+                                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                rhoncus. Accusantium
+                                quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                            </p>
+                            <img src="assets/img/alumni/alumni-1.jpg" class="alumni-img" alt="">
+                            <h3>Saul Goodman</h3>
+                            <h4>Ceo &amp; Founder</h4>
+                        </div>
+                    </div> 
+
+                    <div class="swiper-slide">
+                        <div class="alumni-item">
+                            <p>
+                                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
+                                cillum eram malis
+                                quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                            </p>
+                            <img src="assets/img/alumni/alumni-2.jpg" class="alumni-img" alt="">
+                            <h3>Sara Wilsson</h3>
+                            <h4>Designer</h4>
+                        </div>
+                    </div> 
+
+                    <div class="swiper-slide">
+                        <div class="alumni-item">
+                            <p>
+                                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam
+                                duis minim
+                                tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                            </p>
+                            <img src="assets/img/alumni/alumni-3.jpg" class="alumni-img" alt="">
+                            <h3>Jena Karlis</h3>
+                            <h4>Store Owner</h4>
+                        </div>
+                    </div> 
+
+                    <div class="swiper-slide">
+                        <div class="alumni-item">
+                            <p>
+                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
+                                minim velit
+                                minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
+                                veniam.
+                            </p>
+                            <img src="assets/img/alumni/alumni-4.jpg" class="alumni-img" alt="">
+                            <h3>Matt Brandon</h3>
+                            <h4>Freelancer</h4>
+                        </div>
+                    </div> 
+
+                    <div class="swiper-slide">
+                        <div class="alumni-item">
+                            <p>
+                                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                veniam enim culpa
+                                labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi
+                                cillum quid.
+                            </p>
+                            <img src="assets/img/alumni/alumni-5.jpg" class="alumni-img" alt="">
+                            <h3>John Larson</h3>
+                            <h4>Entrepreneur</h4>
+                        </div>
+                    </div> 
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End alumni Section -->
 
 
-    </nav>
 
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
+    <!--Custom Scripts-->
 
 </body>
 
