@@ -392,12 +392,3 @@ section {
   .alumni .alumni-item p {
     width: 80%;
   }}
-  @media (max-width:1400px) {
-    .about .abt-main-div{
-      width: 700px;
-    }
-    .about .content{
-      font-size: 14.7px;
-    }
-  }
-  
