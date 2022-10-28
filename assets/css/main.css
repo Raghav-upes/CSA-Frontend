@@ -221,10 +221,6 @@ section {
   z-index: -2;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 01e3db5f3c6036492fec0472cc24f1c0dc26c914
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
@@ -421,10 +417,6 @@ section {
     width: 80%;
   }
 }
-
-<<<<<<< HEAD
-=======
-
 
 /*
   # Events
@@ -647,7 +639,6 @@ section {
   padding: 0;
 }
 
->>>>>>> 01e3db5f3c6036492fec0472cc24f1c0dc26c914
 @media (max-width:1400px) {
   .about .abt-main-div {
     width: 700px;
@@ -656,7 +647,6 @@ section {
   .about .content {
     font-size: 14.7px;
   }
-<<<<<<< HEAD
 }
 
 
@@ -669,6 +659,4 @@ section {
   float: left;
   margin: 1.6px 5px 0px 0px;
   height: 22px;
-=======
->>>>>>> 01e3db5f3c6036492fec0472cc24f1c0dc26c914
 }
