@@ -211,6 +211,7 @@ section {
 --------------------------------------------------------------*/
 #about{
   padding-top: 0px !important;
+ 
 }
 .about{
   display: flex;
@@ -312,6 +313,7 @@ section {
   background-size: cover;
   position: relative;
   z-index: -2;
+  margin-top: 20px; /*Temp margin for section sepration*/
 }
 
 

@@ -21,7 +21,7 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!--Main Styles-->
-    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/timeline.css">
     <link rel="stylesheet" href="/assets/css/main.css">
 
 
@@ -43,11 +43,12 @@
                                 href="index.html"><strong>Home</strong></a></li>
                         <li class="nav-item"><a class="nav-link custom-tab" href="#about"><strong>About</strong></a>
                         </li>
-                        <li class="nav-item"><a class="nav-link custom-tab" href="journey"><strong>Journey</strong></a>
+                        <li class="nav-item"><a class="nav-link custom-tab" href="#timeline"><strong>Journey</strong></a>
                         </li>
                         <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Team</strong></a></li>
                         <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Alliance</strong></a></li>
-                        <li class="nav-item"><a class="nav-link custom-tab" href="#alumni"><strong>Alumni</strong></a></li>
+                        <li class="nav-item"><a class="nav-link custom-tab" href="#alumni"><strong>Alumni</strong></a>
+                        </li>
                         <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Events</strong></a></li>
                         <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Contact</strong></a></li>
                     </ul><a id="Register" class="btn btn-primary shadow" role="button"
@@ -57,13 +58,13 @@
             </div>
         </nav>
     </header>
-<!--========= Header End========-->
+    <!--========= Header End========-->
 
 
-<!-- About Section-->
+    <!-- About Section-->
     <section id="about">
         <div class="about">
-            <div class="abt-main-div">
+            <div class="abt-main-div" data-aos="fade-right">
                 <div class="r-dcap"></div>
                 <h1 class="heading">About us</h1>
                 <p class="content">
@@ -80,23 +81,113 @@
                 </p>
                 <h4>We are <span class="message"></span><span class="blink">&nbsp;</span></h4>
             </div>
-            <div class="image"  data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
+            <div class="image" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <img src="/assets/img/about.jpg" class="abt-img">
             </div>
         </div>
     </section>
-<!--About End-->
+    <!--About End-->
+
+
+    <section id="timeline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 id="timeline-title" data-aos="fade-up">Our Journey</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-group timeline">
+                        <li id="event1" class="list-group-item"  data-aos="fade-right" data-aos-delay="500">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid"
+                                    src="assets/journey/1.jpg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2009-2011</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                                        ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+                                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <br>
+                        <li class="list-group-item timeline-inverted" data-aos="fade-right" >
+                            <div class="timeline-image"><img class="rounded-circle img-fluid"
+                                    src="assets/journey/2.jpg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>March 2011</h4>
+                                    <h4 class="subheading">An Agency is Born</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                                        ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+                                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <br><br>
+                        <li class="list-group-item"  data-aos="fade-right">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid"
+                                    src="assets/journey/3.jpg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>December 2012</h4>
+                                    <h4 class="subheading">Transition to Full Service</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                                        ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+                                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item timeline-inverted" data-aos="fade-right">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid"
+                                    src="assets/journey/4.jpg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>July 2014</h4>
+                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                                        ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+                                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <br><br>
+                        <li class="list-group-item timeline-inverted" data-aos="fade-right">
+                            <div class="timeline-image">
+                                <h4>Be Part<br>&nbsp;Of Our<br>&nbsp;Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
     <!-- ======= alumni Section ======= -->
     <section id="alumni" class="alumni">
-        <div class="container" data-aos="zoom-in" >
+        <div class="container" data-aos="zoom-in">
             <div class="quote-icon">
                 <i class="bx bxs-quote-right"></i>
             </div>
 
-            <div class="alumni-slider swiper" data-aos="fade-up" data-aos-delay="100" >
+            <div class="alumni-slider swiper" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
@@ -110,7 +201,7 @@
                                 quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                             </p>
                         </div>
-                    </div> 
+                    </div>
 
                     <div class="swiper-slide">
                         <div class="alumni-item">
@@ -123,7 +214,7 @@
                                 quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                             </p>
                         </div>
-                    </div> 
+                    </div>
 
                     <div class="swiper-slide">
                         <div class="alumni-item">
@@ -136,7 +227,7 @@
                                 tempor labore quem eram duis noster aute amet eram fore quis sint minim.
                             </p>
                         </div>
-                    </div> 
+                    </div>
 
                     <div class="swiper-slide">
                         <div class="alumni-item">
@@ -150,7 +241,7 @@
                                 veniam.
                             </p>
                         </div>
-                    </div> 
+                    </div>
 
                     <div class="swiper-slide">
                         <div class="alumni-item">
@@ -164,7 +255,7 @@
                                 cillum quid.
                             </p>
                         </div>
-                    </div> 
+                    </div>
 
                 </div>
                 <div class="swiper-pagination"></div>
@@ -173,8 +264,6 @@
         </div>
     </section>
     <!-- End alumni Section -->
-
-
 
 
     <!-- Vendor JS Files -->

@@ -94,12 +94,16 @@
    */
   window.addEventListener('load', () => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
       easing: 'ease-in-out',
-      once: true,
-      mirror: false
+      once: false,
+      mirror: true
     })
   });
 
 })()
 
+
+function IsClicked(x){
+x.classList.toggle('is-clicked');
+}
