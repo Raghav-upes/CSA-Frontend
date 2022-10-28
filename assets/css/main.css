@@ -225,7 +225,7 @@ section {
     top: 51px;
     left: 100px;
     font-family:  sans-serif;
-    font-size: 45;
+    font-size: 45px;
     font-weight:800;
 }
 
@@ -391,4 +391,255 @@ section {
 @media (min-width: 992px) {
   .alumni .alumni-item p {
     width: 80%;
+<<<<<<< Updated upstream
   }}
+=======
+  }}
+  @media (max-width:1400px) {
+    .about .abt-main-div{
+      width: 700px;
+    }
+    .about .content{
+      font-size: 14.7px;
+    }
+  }
+  @media (max-width:1300px) {
+    .about .abt-main-div{
+      width: 600px;
+    }
+    .about .content{
+      font-size: 14px;
+    }
+    .about .image
+    {
+      width: 500px;
+      height: 350px;
+      top: 125px;
+    }
+    .about h4{
+      font-size: 55px;
+    }
+    .about .heading{
+      font-size:35px ;
+      top: 45px;
+    }
+    .about .r-dcap{
+      height: 70px;
+    }
+  }
+  @media (max-width:1110px) {
+    .about .abt-main-div{
+      width: 450px;
+    }
+    .about .content{
+      font-size: 12px;
+    }
+    .about .image
+    {
+      width: 400px;
+      height: 300px;
+      top: 125px;
+    }
+    .about h4{
+      font-size: 40px;
+    }
+    .about .heading{
+      font-size:30px ;
+      top: 40px;
+    }
+    .about .r-dcap{
+      height: 60px;
+    }
+  }
+  @media (max-width:900px) {
+    .about{
+    display: block;
+    justify-content: center;
+    height: 850px;
+    }
+    .about .abt-main-div{
+      transition: none;
+      transform: translateY(0);
+      left: 0px;
+      width: 700px;
+      height: 850px;
+    }
+    .about .content{
+      font-size: 13px;
+    }
+    .about .image
+    {
+      transition: none;
+      transform: translateY(0);
+      box-shadow: none;
+      width: 600px;
+      height: 350px;
+      top: -440px;
+      left: 50px;
+    }
+    .about h4{
+      position: relative;
+      top: 400px;
+      font-size: 60px;
+    }
+    .about .heading{
+      font-size:35px ;
+      top: 40px;
+    }
+    .about .r-dcap{
+      height: 70px;
+    }
+  }
+  @media (max-width:750px) {
+    .about{
+    display: block;
+    justify-content: center;
+    height: 830px;
+    }
+    .about .abt-main-div{
+      left: 0px;
+      width: 600px;
+      height: 830px;
+    }
+    .about .content{
+      font-size: 13px;
+    }
+    .about .image
+    {
+      box-shadow: none;
+      width: 500px;
+      height: 300px;
+      top: -380px;
+      left: 50px;
+    }
+    .about h4{
+      position: relative;
+      top: 350px;
+      font-size: 55px;
+    }
+    .about .heading{
+      font-size:30px ;
+      top: 40px;
+      left:90px ;
+    }
+    .about .r-dcap{
+      height: 70px;
+    }
+  }
+  @media (max-width:650px) {
+    .about{
+    display: block;
+    justify-content: center;
+    height: 830px;
+    }
+    .about .abt-main-div{
+      left: 0px;
+      width: 500px;
+      height: 840px;
+    }
+    .about .content{
+      font-size: 13px;
+    }
+    .about .image
+    {
+      box-shadow: none;
+      width: 400px;
+      height: 250px;
+      top: -325px;
+      left: 50px;
+    }
+    .about h4{
+      position: relative;
+      top: 310px;
+      font-size: 47px;
+    }
+    .about .heading{
+      font-size:30px ;
+      top: 40px;
+    }
+    .about .r-dcap{
+      height: 70px;
+    }
+  }
+  @media (max-width:550px) {
+    .about{
+    display: block;
+    justify-content: center;
+    height: 800px;
+    }
+    .about .abt-main-div{
+  
+      width: 400px;
+      height: 800px;
+    }
+    .about .content{
+      font-size: 12.3px;
+      padding-top: 50px;
+      padding-left: 30px;
+    }
+    .about .image
+    {
+      box-shadow: none;
+      width: 340px;
+      height: 200px;
+      top: -270px;
+      left: 30px;
+    }
+    .about h4{
+      position: relative;
+      left: -20px;
+      top: 260px;
+      font-size: 35px;
+    }
+    .about .heading{
+      left: 70px;
+      font-size:25px ;
+      top: 40px;
+    }
+    .about .r-dcap{
+      left: 30px;
+      height: 60px;
+    }
+  }
+  @media (max-width:450px) {
+    .about{
+    display: block;
+    justify-content: center;
+    height: 720px;
+    }
+    .about .abt-main-div{
+  
+      width: 400px;
+      height: 720px;
+    }
+    .about .content{
+      width: 330px;
+      font-size: 10.7px;
+      padding-top: 45px;
+      padding-left: 30px;
+    }
+    .about .image
+    {
+      box-shadow: none;
+      width: 240px;
+      height: 150px;
+      top: -200px;
+      left: 30px;
+    }
+    .about h4{
+      position: relative;
+      left: -20px;
+      top: 210px;
+      font-size: 23px;
+    }
+    .about .heading{
+      left: 70px;
+      font-size:22px ;
+      top: 45px;
+    }
+    .about .r-dcap{
+      left: 30px;
+      height: 55px;
+    }
+  }
+>>>>>>> Stashed changes
