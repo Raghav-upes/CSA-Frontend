@@ -135,6 +135,19 @@
 })()
 
 
+<<<<<<< Updated upstream
 function IsClicked(x) {
   x.classList.toggle('is-clicked');
 }
+=======
+function IsClicked(x){
+x.classList.toggle('is-clicked');
+}
+
+AOS.init({
+  disable: function() {
+    var maxWidth = 900;
+    return window.innerWidth < maxWidth;
+  }
+});
+>>>>>>> Stashed changes
