@@ -134,12 +134,6 @@
 
 })()
 
-
-<<<<<<< Updated upstream
-function IsClicked(x) {
-  x.classList.toggle('is-clicked');
-}
-=======
 function IsClicked(x){
 x.classList.toggle('is-clicked');
 }
@@ -150,4 +144,4 @@ AOS.init({
     return window.innerWidth < maxWidth;
   }
 });
->>>>>>> Stashed changes
+
