@@ -8,7 +8,7 @@
  * 
  * **/
  const textSpan=document.querySelector(".message");
- const textAr=[" Future"," Powerfull"," Guardians"," Confiedent"];
+ const textAr=[" Future"," Powerful"," Guardians"," Confident"];
  const typingDelay=100;
  const erasingDelay=100;
  const nextTextelay=1500;
