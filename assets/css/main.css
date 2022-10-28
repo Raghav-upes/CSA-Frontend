@@ -389,3 +389,225 @@ section {
   .alumni .alumni-item p {
     width: 80%;
   }}
+
+
+/*
+# Events
+*/
+
+
+/*--------------------------------------------------------------
+# events
+--------------------------------------------------------------*/
+
+.events{
+padding-bottom: 60px;
+}
+
+.events .events-item {
+  margin-bottom: 30px;
+}
+
+.events #events-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.events #events-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 18px 12px 18px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #555555;
+  transition: all 0.3s ease-in-out;
+  margin: 0 4px 10px 4px;
+  background: whitesmoke;
+  border-radius: 4px;
+}
+
+.events #events-flters li:hover,
+.events #events-flters li.filter-active {
+  background: #3298ff;
+  color: #fff;
+}
+
+.events #events-flters li:last-child {
+  margin-right: 0;
+}
+
+.events .events-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+
+
+.events .events-wrap .events-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.events .events-wrap .events-info::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.events .events-wrap .events-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.events .events-wrap .events-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.events .events-wrap .events-info p {
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.events .events-wrap .events-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.events .events-wrap .events-links a {
+  color: #fff;
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.events .events-wrap .events-links a:hover {
+  color: #7cc576;
+}
+
+.events .events-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.events .events-wrap:hover .events-info {
+  opacity: 1;
+}
+
+.events .events-wrap:hover .events-info::before {
+  top: 15px;
+  left: 15px;
+}
+
+.events .events-wrap:hover .events-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+/*--------------------------------------------------------------
+# events Details
+--------------------------------------------------------------*/
+.events-details {
+  padding-top: 40px;
+}
+
+.events-details .events-details-slider img {
+  width: 100%;
+}
+
+.events-details .events-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.events-details .events-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #3298ff;
+}
+
+.events-details .events-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #3298ff;
+}
+
+.events-details .events-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(21, 21, 21, 0.08);
+}
+
+.events-details .events-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.events-details .events-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.events-details .events-info ul li+li {
+  margin-top: 10px;
+}
+
+.events-details .events-description {
+  padding-top: 30px;
+}
+
+.events-details .events-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.events-details .events-description p {
+  padding: 0;
+}
