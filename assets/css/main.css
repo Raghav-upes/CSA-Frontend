@@ -739,3 +739,13 @@ section {
   margin: 1.6px 5px 0px 0px;
   height: 22px;
 }
+#contactus-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  color: #F5F5F5;
+}
