@@ -220,6 +220,13 @@ section {
   position: relative;
 }
 
+.social::hover{
+  color: rgb(213, 80, 80);
+  filter: invert(100%);
+  transform: none;
+  transition: 1000ms;
+}
+
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
