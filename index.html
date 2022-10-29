@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="/assets/css/timeline.css">
     <link rel="stylesheet" href="/assets/css/main.css">
 
+    <script src="./particles.js"></script>
 
     <title>Home</title>
 </head>
@@ -31,9 +32,64 @@
 <body>
 
 
+
+
+
+    <section id="home">
+        <div id="particles-js"></div>
+        <div class="home-container">
+
+
+            <div class="container justify-content-center">
+                <h1 style="font-size: 6rem; color: white; text-align: center;"><strong>UPES</strong></h1>
+            </div>
+            <div class="container justify-content-center">
+                <h2 style="font-size: 3rem; color: white; text-align: center;"><strong>CLOUD SECURITY ALLIANCE</strong>
+                    </h6>
+            </div>
+            <div class="socials">
+                <div class="row justify-content-center">
+                    <div class="col-md-auto social" style="width: 1%;">
+                        <a href="https://www.facebook.com/upescsa/" target="_blank" aria-hidden="true">
+                            <i class="bi bi-facebook social" style="color: white;"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-auto social" style="width: 1%;">
+                        <a href="https://www.instagram.com/upescsa/?hl=en" target="_blank" aria-hidden="true">
+                            <i class="bi bi-instagram social" style="color: white;"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-auto social" style="width: 1%;">
+                        <a href="https://twitter.com/upescsa" target="_blank" aria-hidden="true">
+                            <i class="bi bi-twitter social" style="color: white;"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-auto social" style="width: 1%;">
+                        <a href="https://www.linkedin.com/company/upescsa/" target="_blank" aria-hidden="true">
+                            <i class="bi bi-linkedin social" style="color: white;"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-auto social" style="width: 1%;">
+                        <a href="https://www.youtube.com/channel/UCOQTG59VV6-1czSs57XAFrA" target="_blank"
+                            aria-hidden="true">
+                            <i class="bi bi-youtube social" style="color: white;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <a data-aos="fade-up" data-aos-delay="200" href="#about">
+                <div class="mouse"></div>
+            </a>
+
+        </div>
+    </section>
+
+
+
     <!-- ===========HEADER==========-->
     <header id="header">
-        <nav class="navbar fixed-top navbar-expand-sm bg-light">
+        <nav id="navbar" class="navbar navbar-expand-sm bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="/assets/img/favicon/favicon.png" alt="Bootstrap"
                         width="65" height="65" class="d-inline-block align-top"></a>
@@ -64,48 +120,6 @@
     </header>
     <!--========= Header End========-->
 
-    <!--Home Section-->
-
-    <section id="home">
-        <div class="container justify-content-center">
-            <h1 style="font-size: 6rem; color: white; text-align: center;"><strong>UPES</strong></h1>
-        </div>
-        <div class="container justify-content-center">
-            <h2 style="font-size: 3rem; color: white; text-align: center;"><strong>CLOUD SECURITY ALLIANCE</strong></h6>
-        </div>
-        <div class="socials">
-            <div class="row justify-content-center">
-                <div class="col-md-auto social" style="width: 1%;">
-                    <a href="https://www.facebook.com/upescsa/" target="_blank" aria-hidden="true">
-                        <i class="bi bi-facebook social" style="color: white;"></i>
-                    </a>
-                </div>
-                <div class="col-md-auto social" style="width: 1%;">
-                    <a href="https://www.instagram.com/upescsa/?hl=en" target="_blank" aria-hidden="true">
-                        <i class="bi bi-instagram social" style="color: white;"></i>
-                    </a>
-                </div>
-                <div class="col-md-auto social" style="width: 1%;">
-                    <a href="https://twitter.com/upescsa" target="_blank" aria-hidden="true">
-                        <i class="bi bi-twitter social" style="color: white;"></i>
-                    </a>
-                </div>
-                <div class="col-md-auto social" style="width: 1%;">
-                    <a href="https://www.linkedin.com/company/upescsa/" target="_blank" aria-hidden="true">
-                        <i class="bi bi-linkedin social" style="color: white;"></i>
-                    </a>
-                </div>
-                <div class="col-md-auto social" style="width: 1%;">
-                    <a href="https://www.youtube.com/channel/UCOQTG59VV6-1czSs57XAFrA" target="_blank"
-                        aria-hidden="true">
-                        <i class="bi bi-youtube social" style="color: white;"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Home End -->
 
     <!-- About Section-->
     <section id="about">
@@ -309,7 +323,7 @@
     <!-- ======= alumni Section ======= -->
     <section id="alumni" class="alumni">
         <div class="container">
-            <div class="quote-icon">
+            <div class="quote-icon" data-aos="fade-up">
                 <i class="bx bxs-quote-right"></i>
             </div>
 
@@ -464,6 +478,17 @@
 
     <!--Custom Scripts-->
 
+
+    <script>
+
+        // particle.js config
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load('particles-js', 'particlesjs-config.json', () => {
+            console.log('Particles.js config loaded!');
+        });
+
+
+    </script>
 </body>
 
 </html>
