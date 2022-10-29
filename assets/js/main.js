@@ -124,46 +124,6 @@
   });
 
 
-
-  /**
-   * Events isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let eventsContainer = select('.events-container');
-    if (eventsContainer) {
-      let eventsIsotope = new Isotope(eventsContainer, {
-        itemSelector: '.events-item',
-        layoutMode: 'fitRows'
-      });
-
-      let eventsFilters = select('#events-flters li', true);
-
-      on('click', '#events-flters li', function (e) {
-        e.preventDefault();
-        eventsFilters.forEach(function (el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        eventsIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        eventsIsotope.on('arrangeComplete', function () {
-          AOS.refresh()
-        });
-      }, true);
-    }
-
-  });
-
-
-
-/**
- * 
- * Particles Initializer
- */
-
-
 })()
 
 
