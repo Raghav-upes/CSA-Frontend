@@ -750,16 +750,19 @@ section {
   color: #151515;
 }
 
+#contact{
+  padding-bottom: 0%;
+}
 
 
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
-  position: fixed;
+  position: sticky;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 95%;
   bottom: 15px;
   z-index: 996;
   background: #39f ;
