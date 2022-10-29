@@ -49,7 +49,7 @@ h6 {
 
 .custom-tab.active {
   background: transparent !important;
-  color: #39f ;
+  color: #39f;
   border-bottom: 2px solid #39f !important;
   border-radius: 0px !important;
 }
@@ -231,6 +231,7 @@ section {
   height: 100%;
   top: 0;
 }
+
 #home {
   padding: 200px 0;
   background-color: #111111;
@@ -257,7 +258,7 @@ section {
   z-index: 3;
 }
 
-.social::hover{
+.social::hover {
   color: rgb(213, 80, 80);
   filter: invert(100%);
   transform: none;
@@ -272,6 +273,7 @@ section {
   border-radius: 60px;
   position: relative;
 }
+
 .mouse::before {
   content: "";
   width: 12px;
@@ -293,6 +295,7 @@ section {
     top: 60px;
   }
 }
+
 @-webkit-keyframes wheel {
   to {
     opacity: 0;
@@ -739,6 +742,7 @@ section {
   margin: 1.6px 5px 0px 0px;
   height: 22px;
 }
+
 #contactus-title {
   text-align: center;
   font-size: 40px;
@@ -762,7 +766,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #39f ;
+  background: #39f;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -776,7 +780,7 @@ section {
 }
 
 .back-to-top:hover {
-  background: #39f ;
+  background: #39f;
   color: #39f;
 }
 
@@ -786,6 +790,6 @@ section {
 }
 
 
-#map{
+#map {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, .2);
 }
