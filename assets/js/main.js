@@ -91,9 +91,6 @@
     }
   });
 
-
-
-
   /**
    * Animation on scroll
    */
