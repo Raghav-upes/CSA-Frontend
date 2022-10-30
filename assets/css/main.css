@@ -422,71 +422,35 @@ section {
 /*--------------------------------------------------------------
 # Alliance
 ---------------------------------------------------------------*/
-.alliance{
-  padding:0%;
-  background-color: #000000;
+.alliance {
+  padding: 0%;
+  margin: 0%;
   box-sizing: border-box;
-  margin:0;
-
-}
-.alliance.alliance-slider{
-  position:relative;
-  width: 60%;
-  overflow: hidden;
-
+  border-top: 5px solid black;
+  /* Temp border for section separation */
 }
 
-.alliance.alliance-image{
-  display:flex;
-  width:100%;
+.customzoom:hover {
+  transform: scale(1.1);
+  transition: 600ms;
 }
 
-.alliance.alliance-image img{
-  height: 400px;
-  width: 100%;
-  transition: all 0.15s ease;
+.spacing {
+  flex: 1 0 0%;
+  padding: 0 1.5rem 0 1.5rem;
 }
 
-.alliance-image input{
-  display:none;
-}
-.dots{
-  display:flex;
-  justify-content: center;
-  margin:5px;
+.custom-border {
+  border: 1px solid white;
+  border-radius: 5%;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
-.dots label{
-  height:20px;
-  width: 20px;
-  border-radius: 50%;
-  border: solid #fff 3px;
-  cursor:pointer;
-  transition: all 0.15s ease;
-  margin:20px;
-
+.alliance-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
-.dots label:hover {
-  background:#fff;
-}
-
-#img1:checked ~ .m1 {
-  margin-left: 0;
-}
-#img2:checked ~ .m2 {
-  margin-left: -100%;
-}
-#img3:checked ~ .m3 {
-  margin-left: -200%;
-}
-#img4:checked ~ .m4 {
-  margin-left: -300%;
-}
-#img5:checked ~ .m5 {
-  margin-left: -400%;
-}
-
-
 
 /*--------------------------------------------------------------
 # alumni
@@ -494,13 +458,11 @@ section {
 
 
 .alumni {
-  padding: 60px 0;
+  padding-bottom: 60px;
   background: url("/assets/img/alumni.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
-  margin-top: 20px;
-  /*Temp margin for section sepration*/
 }
 
 .alumni .quote-icon {
@@ -828,7 +790,7 @@ section {
   color: #151515;
 }
 
-#contact{
+#contact {
   padding-bottom: 0%;
 }
 
@@ -870,4 +832,3 @@ section {
 #map {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, .2);
 }
-
