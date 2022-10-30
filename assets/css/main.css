@@ -179,7 +179,13 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  color: #F5F5F5;
 }
 
 .section-title h2 {
@@ -418,13 +424,14 @@ section {
 /*--------------------------------------------------------------
 # alumni
 --------------------------------------------------------------*/
+
+
 .alumni {
   padding: 60px 0;
   background: url("/assets/img/alumni.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
-  z-index: -2;
   margin-top: 20px;
   /*Temp margin for section sepration*/
 }
@@ -796,3 +803,4 @@ section {
 #map {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, .2);
 }
+
