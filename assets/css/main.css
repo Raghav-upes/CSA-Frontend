@@ -428,8 +428,13 @@ section {
   box-sizing: border-box;
 }
 
+.customzoom{
+  transition: all ease-in-out 0.4s;
+}
+
 .customzoom:hover {
   transform: scale(1.1);
+  /* transform: translateY(-15px); */
   transition: 600ms;
 }
 

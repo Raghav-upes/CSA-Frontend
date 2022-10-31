@@ -5,66 +5,207 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Colorlib Templates">
-  <meta name="author" content="Colorlib">
-  <meta name="keywords" content="Colorlib Templates">
-
-  <title>Au Register Forms by Colorlib</title>
-
+  <title>Registration Form</title>
 
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.css">
   <link href="registration.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="/assets/css/main.css">
 
 <body>
-
-  <div class="container">
-    <h1 class="well">Registration Form</h1>
-    <div class="col-lg-12 well">
-      <div class="row">
-        <form>
-          <div class="col-sm-12">
-            <div class="row">
-              <div class="col-sm-6 form-group">
-
-                <input type="text" placeholder="Enter First Name Here.." class="form-control">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4 form-group">
-                <input type="text" placeholder="Enter City Name Here.." class="form-control">
-              </div>
-              <div class="col-sm-4 form-group">
-                <input type="text" placeholder="Enter State Name Here.." class="form-control">
-              </div>
-              <div class="col-sm-4 form-group">
-                <input type="text" placeholder="Enter Zip Code Here.." class="form-control">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 form-group">
-                <input type="text" placeholder="Enter Designation Here.." class="form-control">
-              </div>
-              <div class="col-sm-6 form-group">
-                <input type="text" placeholder="Enter Company Name Here.." class="form-control">
-              </div>
-            </div>
-            <div class="form-group">
-              <l <input type="text" placeholder="Enter Phone Number Here.." class="form-control">
-            </div>
-            <div class="form-group">
-              <la <input type="text" placeholder="Enter Email Address Here.." class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="text" placeholder="Enter Website Name Here.." class="form-control">
-            </div>
-            <button type="button" class="btn btn-lg btn-info">Submit</button>
-          </div>
-        </form>
+  <section class="mt-1 pt-1">
+    <div class="row">
+      <div class="col-sm-2">
+        <a class="align-items-center justify-content-center d-flex" href="index.html"><img src="/assets/img/favicon/favicon.png" alt="UPES CSA LOGO" width="120"
+            height="120" class="d-inline-block align-top mt-2"></a>
       </div>
+      <div class="col-sm-8 d-flex align-items-center justify-content-center py-5">
+        <h1 class="text-center customhead" style="font-size: 4rem; font-weight: bold;">REGISTRATION FORM</h1>
+      </div>
+      <div class="col-sm-2"></div>
     </div>
-  </div>
+    <!-- <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="/assets/img/favicon/favicon.png" alt="UPES CSA LOGO"
+        width="120" height="120" class="d-inline-block align-top ms-4 mt-2"></a>
+    </div> -->
+
+    <form action="#">
+      <div class="container py-5 customborder" style="background-color: white;">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12">
+            <div class="card-body">
+              <h1 class="text-center fw-bold py-4" style="font-size: 2.5rem;">PERSONAL DETAILS</h1>
+              <form>
+
+                <div class="row justify-content-center">
+                  <div class="col-md-8 mb-4">
+                    <div class="form-outline">
+                      <label class="form-label" for="firstName">Name:</label>
+                      <input type="text" id="firstName" class="form-control form-control-lg" placeholder="Name"
+                        required />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-md-8 mb-4">
+                    <label class="form-label" style="padding-right: 5px;">Gender:<br></label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                        value="option1" required />
+                      <label class="form-check-label" for="maleGender" style="font-size: 1.2rem;">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                        value="option2" />
+                      <label class="form-check-label" for="femaleGender" style="font-size: 1.2rem;">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                        value="option3" />
+                      <label class="form-check-label" for="otherGender" style="font-size: 1.2rem;">Other</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-md-8 mb-4">
+                    <div class="form-outline">
+                      <label class="form-label" for="dateofbirth">DOB:</label>
+                      <input type="date" id="dateofbirth" class="form-control form-control-lg" required />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-md-8 mb-4">
+                    <div class="form-outline">
+                      <label for="emailadd" class="form-label">Email:</label>
+                      <input type="email" class="form-control form-control-lg" id="emailadd" placeholder="Email"
+                        required />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-md-8 mb-4">
+                    <div class="form-outline">
+                      <label for="course" class="form-label">Course:</label>
+                      <input type="text" class="form-control form-control-lg" id="course" placeholder="Course Name"
+                        required />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-md-8 mb-4">
+                    <div class="form-outline">
+                      <label for="CourseYear" class="form-label">Year of Study:</label>
+                      <input type="number" class="form-control form-control-lg" id="CourseYear" placeholder="Year"
+                        required />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-md-8 mb-4">
+                    <div class="form-outline">
+                      <label for="SAPID" class="form-label">SAP ID:</label>
+                      <input type="number" class="form-control form-control-lg" id="SAPID" placeholder="SAP ID"
+                        required />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-md-8 mb-4">
+                    <div class="form-outline">
+                      <label for="whatsappnumber" class="form-label">WhatsApp Number:</label>
+                      <input type="tel" class="form-control form-control-lg" id="whatsappnumber"
+                        placeholder="WhatsApp Number" pattern="[0-9]{10}" required />
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container customborder py-5 mt-5" style="background-color: white;">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-12">
+            <div class="card-body">
+              <h1 class="text-center fw-bold py-4" style="font-size: 2.5rem;">PAYMENT WINDOW</h1>
+
+              <div class="row justify-content-center">
+
+                <div class="col-sm-auto d-flex md-6 justify-content-center align-items-center">
+                  <div class="custom-border px-4 pt-4">
+                    <img class="payment custom-border" src="/assets/img/payment/gpay.jpeg" alt="GooglePay">
+                    <h1 class="text-center py-3"><strong>Google Pay</strong></h1>
+                  </div>
+                </div>
+
+                <div class="col-sm-auto d-flex md-6 justify-content-center align-items-center">
+                  <div class="custom-border px-4 pt-4">
+                    <img class="payment" src="/assets/img/payment/paytm.jpeg" alt="Paytm">
+                    <h1 class="text-center py-3"><strong>Paytm</strong></h1>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row d-flex justify-content-center pt-5">
+                <div class="col-md-8 mb-4">
+                  <label class="form-label select-label" style="padding-right: 5px;">Payment Mode:</label>
+                  <select class="select form-control form-control-lg" required>
+                    <option value="" selected>Choose:</option>
+                    <option value="1">Google Pay</option>
+                    <option value="2">Paytm</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-md-8 mb-4">
+                  <div class="form-outline">
+                    <label class="form-label" for="TransactionID">Transaction ID:</label>
+                    <input type="tel" id="TransactionID" class="form-control form-control-lg"
+                      placeholder="Transaction ID" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-md-8 mb-4">
+                  <div class="form-outline">
+                    <label class="form-label" for="SS-Transaction">Screenshot of Transaction:</label>
+                    <div class="form-check form-check-inline">
+                      <input type="file" class="form-check-inline" id="SS-Transaction" placeholder="Transaction ID"
+                        required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <div class="mt-4 pt-2">
+                    <button type="submit" class="btn btn-lg" id="submitbutton"><strong>Submit
+                        form</strong></button>
+                    <button type="reset" class="btn btn-light btn-lg" id="resetbutton"><strong>Reset
+                        all</strong></button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
 </body>
 
 </html>
