@@ -37,12 +37,12 @@
         <div class="container">
             <nav id="navbar" class="navbar fixed-top navbar-expand-sm bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="/assets/img/favicon/favicon.png" alt="UPES CSA LOGO"
-                            width="65" height="65" class="d-inline-block align-top"></a>
+                    <a class="navbar-brand" href="index.html"><img src="/assets/img/favicon/favicon.png"
+                            alt="UPES CSA LOGO" width="65" height="65" class="d-inline-block align-top"></a>
                     <div class="collapse navbar-collapse" id="navNav">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item"><a class="nav-link active custom-tab"
-                                    href="index.html"><strong>Home</strong></a></li>
+                                    href="i"><strong>Home</strong></a></li>
                             <li class="nav-item"><a class="nav-link custom-tab" href="#about"><strong>About</strong></a>
                             </li>
                             <li class="nav-item"><a class="nav-link custom-tab"
@@ -55,7 +55,7 @@
                             <li class="nav-item"><a class="nav-link custom-tab"
                                     href="#alliance"><strong>Alliance</strong></a>
                             </li>
-                            <li class="nav-item"><a class="nav-link custom-tab" href="#"><strong>Events</strong></a>
+                            <li class="nav-item"><a class="nav-link custom-tab" href="#events"><strong>Events</strong></a>
                             </li>
                             <li class="nav-item"><a class="nav-link custom-tab" href="#csr_activities"><strong>CSR
                                         Activities</strong></a>
@@ -63,8 +63,8 @@
                             <li class="nav-item"><a class="nav-link custom-tab"
                                     href="#contact"><strong>Contact</strong></a>
                             </li>
-                        </ul><a id="Register" class="btn btn-primary shadow" role="button"
-                            href="/registration.html"><strong>Register</strong></a>
+                        </ul><a id="Register" class="btn btn-primary shadow" role="button" href="/registration.html"
+                            target="_blank"><strong>Register</strong></a>
                     </div>
                     <a class="mobile-nav-menu-toggle" href="#" onclick="IsClicked(this)"><span>Menu</span></a>
                 </div>
@@ -467,60 +467,307 @@
     <!--Alliance section end-->
 
     <!-- Events Section -->
-    <section id="events" class="events">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-title" style="color: black;">EVENTS
-                    </h2>
-                </div>
-            </div>
-            <div class="row events-container" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="col-lg-4 col-md-6 events-item filter-2018">
-                    <div class="events-wrap">
-                        <img src="assets/img/events/2022/hackathon_img.png" class="img-fluid" alt="hackathon_img">
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 events-item filter-2019">
-                    <div class="events-wrap">
-                        <img src="assets/img/events/2022/CTF.jpeg" class="img-fluid" alt="CTF">
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 events-item filter-2018">
-                    <div class="events-wrap">
-                        <img src="assets/img/events/2022/RESUME BUILDING (1).png" class="img-fluid"
-                            alt="resume BUILDING">
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 events-item filter-2020">
-                    <div class="events-wrap">
-                        <img src="assets/img/events/2021/AWS_Certifications.jpg" class="img-fluid"
-                            alt="aws AWS_Certifications">
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 events-item filter-2019">
-                    <div class="events-wrap">
-                        <img src="assets/img/events/2021/Code-IT.jpg" class="img-fluid" alt="CODE IT">
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 events-item filter-2018">
-                    <div class="events-wrap">
-                        <img src="assets/img/events/2021/azure.jpeg" class="img-fluid" alt="azure">
-                    </div>
-                </div>
-
-            </div>
-
+    <section class="events" id="events">
+        <div>
+            <h1 class="text-center pb-3"><strong>EVENTS</strong></h1>
         </div>
+
+        <ul id="events-filter" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-2022">2022</li>
+            <li data-filter=".filter-2021">2021</li>
+            <li data-filter=".filter-2020">2020</li>
+            <li data-filter=".filter-2019">2019</li>
+            <li data-filter=".filter-2018">2018</li>
+        </ul>
+
+        <div class="event-container">
+
+            <div id="2022" class="event-year py-4 px-5 mx-5 my-5 filter-2022" data-aos="zoom-in-up" data-aos-duration="600">
+
+                <h1 class="text-center pb-4" style="color: black;"><strong>2022</strong></h1>
+
+                <div class="events-slider swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="2021" class="event-year py-4 px-4 mx-5 my-5 filter-2021" data-aos="zoom-in-up" data-aos-duration="600">
+
+                <h1 class="text-center pb-4" style="color: black;"><strong>2021</strong></h1>
+
+                <div class="events-slider swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="2020" class="event-year py-4 px-4 mx-5 mt-5 mb-5 filter-2020" data-aos="zoom-in-up" data-aos-duration="600">
+
+                <h1 class="text-center pb-4" style="color: black;"><strong>2020</strong></h1>
+
+                <div class="events-slider swiper">
+                    
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="2019" class="event-year py-4 px-4 mx-5 my-5 filter-2019" data-aos="zoom-in-up" data-aos-duration="600">
+
+                <h1 class="text-center pb-4" style="color: black;"><strong>2019</strong></h1>
+
+                <div class="events-slider swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="2018" class="event-year py-4 px-4 mx-5 my-5 filter-2018" data-aos="zoom-in-up" data-aos-duration="600">
+
+                <h1 class="text-center pb-4" style="color: black;"><strong>2018</strong></h1>
+
+                <div class="events-slider swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="events-item px-2">
+                                <img src="/assets/img/events/2022/hackathon_img.png" alt="" height="400px"
+                                    width="400px">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
     </section>
-    <!-- End events Section -->
+
+    <!-- End of Events Section -->
+
 
     <!-- CSR Activities -->
     <section id="csr_activities">
@@ -530,32 +777,38 @@
                 elit. Illum deleniti ipsum nulla ab, eveniet quisquam!</p>
             <div class="card_contain">
                 <div class="row d-flex justify-content-center align-items-center mx-2">
-                    <div class="col-sm-3 mb-5 zoomm" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="card" id="card_shadow" style="height: 26rem;">
+
+                    <div class="col-sm-3 mb-5 zoomm" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600">
+                        <div class="card h-100" id="card_shadow">
                             <img src="assets/img/CSR Activities/cs1.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae, ipsam aut iure earum placeat asperiores perspiciatis nostrum enim est.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae, ipsam aut iure
+                                    earum placeat asperiores perspiciatis nostrum enim est.</p>
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-sm-3 mb-5 zoomm" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="card" id="card_shadow" style="height: 26rem;">
+
+                    <div class="col-sm-3 mb-5 zoomm" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600">
+                        <div class="card h-100" id="card_shadow">
                             <img src="assets/img/CSR Activities/csr_1.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae, ipsam aut iure earum placeat asperiores perspiciatis nostrum enim est.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae, ipsam aut iure
+                                    earum placeat asperiores perspiciatis nostrum enim est.</p>
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-sm-3 mb-5 zoomm" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="card" id="card_shadow" style="height: 26rem;">
+
+                    <div class="col-sm-3 mb-5 zoomm" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="600">
+                        <div class="card h-100" id="card_shadow">
                             <img src="assets/img/CSR Activities/cs2.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae, ipsam aut iure earum placeat asperiores perspiciatis nostrum enim est.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae, ipsam aut iure
+                                    earum placeat asperiores perspiciatis nostrum enim est.</p>
                             </div>
                         </div>
                     </div>

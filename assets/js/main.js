@@ -80,7 +80,7 @@
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 6000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -110,3 +110,65 @@
 function IsClicked(x) {
   x.classList.toggle('is-clicked');
 }
+
+/**
+   * 
+   * Slider for Events Section 
+   * 
+   */
+
+ new Swiper('.events-slider', {
+  speed: 600,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  slidesPerView: 'auto',
+  pagination: {
+    el: '.swiper-pagination',
+    type:'bullets',
+    clickable: true
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }
+});
+
+/**
+   * Events isotope and filter
+   */
+ window.addEventListener('load', () => {
+  let eventContainer = select('.event-container');
+  if (eventContainer) {
+    let eventIsotope = new Isotope(eventContainer, {
+      itemSelector: '.event-year'
+    });
+
+    let eventFilters = select('#events-flters li', true);
+
+    on('click', '#events-flters li', function(e) {
+      e.preventDefault();
+      eventFilters.forEach(function(el) {
+        el.classList.remove('filter-active');
+      });
+      this.classList.add('filter-active');
+
+      eventIsotope.arrange({
+        filter: this.getAttribute('data-filter')
+      });
+      eventIsotope.on('arrangeComplete', function() {
+        AOS.refresh()
+      });
+    }, true);
+  }
+
+});
