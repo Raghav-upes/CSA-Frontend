@@ -9,8 +9,8 @@ background-color: #f5f5f5;
     /* background-image: url(/assets/img/background/stockvault-black-and-purple-gradient-background279149\ \(1\).jpg); */
     /* background-image: linear-gradient(115deg,rgb(0,0,0,0.9), rgb(0,0,128,0.9),rgb(128,0,128,0.9)); */
     /* background-image: linear-gradient(115deg,rgb(76,166,235,0.9), rgb(168,124,237,0.9),rgb(239,82,108,0.9)); */
-    background-image: url(/assets/img/background/gradient.jpg);
-    transform: rotate(90);
+    /* background-image: url(/assets/img/background/gradient.jpg); */
+    background-color: #111010;
     background-repeat: no-repeat;
     padding-top: 90px !important;
 }
@@ -91,7 +91,7 @@ background-color: #f5f5f5;
     color: #fff;
     border: 7px solid #e9ecef;
     border-radius: 100%;
-    background-color: rgb(0,0,128);
+    background-color: #111010;
 }
 
 .timeline>li .timeline-image h4,
