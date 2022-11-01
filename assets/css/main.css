@@ -327,7 +327,6 @@ section {
   position: absolute;
   top: 51px;
   left: 100px;
-  font-family: sans-serif;
   font-size: 45;
   font-weight: 800;
 }
@@ -378,7 +377,6 @@ section {
 .about h4 {
   font-size: 70px;
   font-weight: 500;
-  font-family: sans-serif;
   padding: 0px 50px;
 }
 
@@ -849,7 +847,6 @@ section {
   position: relative;
   top: -45px;
   font-size: 20px;
-  font-family: sans-serif;
   color: #A9A9A9;
 }
 
@@ -872,9 +869,6 @@ section {
 .csr_activities .col {
   position: relative;
   top: -20px;
-  height: 450px;
-  width: 400px;
-
 }
 .csr_activities .card-title {
   font-weight: 900;
@@ -886,6 +880,10 @@ section {
 .csr_activities #card_shadow{
   -webkit-box-shadow: 0px 6px 10px -7px rgba(0,0,0,0.73);
   -moz-box-shadow: 0px 6px 10px -7px rgba(0,0,0,0.73);
-  box-shadow: 0px 6px 10px -7px rgba(0,0,0,0.73);
-   
+  box-shadow: 0px 6px 10px -7px rgba(0,0,0,0.73);  
+}
+
+.csr_activities .zoomm:hover{
+  transform: scale(1.1);
+  transition: 300ms ease-in-out;
 }
