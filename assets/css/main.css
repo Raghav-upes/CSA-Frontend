@@ -631,17 +631,6 @@ section {
   height: 22px;
 }
 
-#contactus-title {
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  margin-top: 0px;
-  padding-bottom: 30px;
-  color: #151515;
-}
-
 .contact {
   padding-bottom: 0%;
   background-color: #151515;
