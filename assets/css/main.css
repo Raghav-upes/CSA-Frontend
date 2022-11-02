@@ -610,9 +610,8 @@ section {
 .events .event-container .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: rgb(128,128,128,0.5);
   opacity: 1;
-  border: 1px solid #2487ce;
 }
 
 .events .event-container .swiper-pagination .swiper-pagination-bullet-active {
@@ -639,40 +638,6 @@ section {
 .contact .card-body p {
   font-family: Calibri;
   color: black;
-}
-
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: sticky;
-  visibility: hidden;
-  opacity: 0;
-  left: 95%;
-  bottom: 15px;
-  z-index: 996;
-  background: #39f;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
-}
-
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  background: #39f;
-  color: #39f;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -716,27 +681,11 @@ section {
   color: #787878;
   font-size: 16px;
 }
-<<<<<<< Updated upstream
-
-.csr_activities #card_shadow {
-  -webkit-box-shadow: 0px 6px 10px -7px rgba(0, 0, 0, 0.73);
-  -moz-box-shadow: 0px 6px 10px -7px rgba(0, 0, 0, 0.73);
-  box-shadow: 0px 6px 10px -7px rgba(0, 0, 0, 0.73);
-}
-=======
 .csr_activities #card_shadow{
   -webkit-box-shadow: 0px 6px 10px -7px rgba(0,0,0,0.73);
   -moz-box-shadow: 0px 6px 10px -7px rgba(0,0,0,0.73);
   box-shadow: 0px 6px 10px -7px rgba(0,0,0,0.73);  
 }
-
-
-/*
-
-Team section
-
-*/
-
 
 
 /*--------------------------------------------------------------
@@ -750,7 +699,7 @@ Team section
 .team .member {
   margin-bottom: 20px;
   overflow: hidden;
-  width: 280px;
+  width: 260px;
 }
 
 .team .member .member-img {
@@ -758,6 +707,7 @@ Team section
   overflow: hidden;
   border-radius: 5px;
   width: 218px;
+  margin-left: 20px;
 }
 
 .team .member .social {
@@ -769,7 +719,7 @@ Team section
   opacity: 0;
  
   transition: bottom ease-in-out 0.4s;
-  background: rgba(124, 197, 118, 0.8);
+  background: rgb(255,255,255,0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -777,7 +727,7 @@ Team section
 
 .team .member .social a {
   transition: color 0.3s;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255);
   margin: 0 10px;
   display: inline-flex;
   align-items: center;
@@ -797,10 +747,15 @@ Team section
   margin: 0 2px;
 }
 
+.team .member .member-info{
+  text-align: center;
+}
+
 .team .member .member-info h4 {
   font-weight: 700;
   margin: 15px 0 5px 0;
   font-size: 18px;
+
 }
 
 .team .member .member-info span {
@@ -809,7 +764,7 @@ Team section
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 15px;
-  color: #7cc576;
+  color: grey;
 }
 
 .team .member .member-info p {
@@ -824,4 +779,3 @@ Team section
   opacity: 1;
   transition: bottom ease-in-out 0.4s;
 }
->>>>>>> Stashed changes
