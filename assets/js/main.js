@@ -27,7 +27,6 @@
   }
   function erase() {
     if (char_index > 0) {
-
       textSpan.textContent = textAr[Text_index].substring(0, char_index - 1);
       char_index--;
       setTimeout(erase, erasingDelay);
