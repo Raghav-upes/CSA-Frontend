@@ -382,12 +382,10 @@ section {
 
 .about .message {
   font-weight: 600;
-  color: #0066FF !important;
+  color:#0066FF !important;
 }
 
 .about .blink {
-
-
   display: inline-block;
   width: 3px;
   background-color: black;
@@ -415,7 +413,82 @@ section {
     background-color: black;
   }
 }
+@media (min-width:420px) {
+  .img1,.img2{
+    display: none;
+  }
+  .zaroori{
 
+  }
+}
+@media (max-width:420px) {
+  .blue_div1,.blue_div2{
+     width: 440px;
+     height: 110px;
+     background-color: #0066FF;
+     position: relative;
+     top: -60px;
+     left: 170px;
+     z-index: 2;
+  }
+  .blue_div2{
+    top: 415px;
+  }
+  .about{
+    height: 750px;
+    display: block;
+  }
+  .about .heading{
+    font-size: 46px;
+    left: 210px;
+    top: 60px;
+    color: white;
+    z-index: 3;
+  }
+  .about .abt-img{
+    display: none;
+  }
+  .about .abt-main-div{
+    height: 750px;
+  }
+  .about .image{
+    display: none;
+  }
+  .about .content{
+    font-size: 14px;
+    text-align: justify;
+  }
+  .about .contain_content{
+      position: relative;
+      top: -200px;
+      left: 165px;
+       width: 440px;
+       height: 500px;
+       font-weight: bold;
+  }
+  .about h4{
+    position: relative;
+    top: -160px;
+    left: 150px;
+    font-size: 35px;
+    color: white;
+    z-index: 2;
+  }
+  .about .message{
+    font-size: 36px;
+    z-index: 5;
+    color: white !important;
+  }
+  .img1,.img2{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.55;
+  }
+  .about .blink{
+    background-color: white !important;
+  }
+}
 
 /*--------------------------------------------------------------
 # Alliance
