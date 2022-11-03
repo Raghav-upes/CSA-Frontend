@@ -25,144 +25,297 @@ h6 {
 
 
 /*--------------------------------------------------------------
-# Navbar
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
 --------------------------------------------------------------*/
 
-.nav-item {
-  padding-left: 5px;
-  padding-right: 5px;
+.header {
+  transition: all 0.5s;
+  z-index: 997;
+  height: 90px;
+  background-color: white;
 }
 
-.nav-link {
-  color: grey;
-  position: relative;
-}
-
-.nav-link:hover {
-  color: #007bff;
-  transition: all 100ms ease-in;
-}
-
-.div {
-  background-color: aqua;
-}
-
-.custom-tab.active {
-  background: transparent !important;
-  color: #39f;
-  border-bottom: 2px solid #39f !important;
-  border-radius: 0px !important;
-}
-
-
-/* ------------------------------------------------------------------- 
- * ## Navbar Toggle
- * ------------------------------------------------------------------- */
-.mobile-nav-menu-toggle {
-  display: none;
-  height: 42px;
-  width: 42px;
-  line-height: 42px;
-  font-family: "Lora", serif;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
-  color: rgba(0, 0, 0, 0.5);
-  transition: all .3s;
-  position: absolute;
-  right: 32px;
-  top: 18px;
-}
-
-.mobile-nav-menu-toggle:hover,
-.mobile-nav-menu-toggle:focus {
-  color: #000000;
-}
-
-.mobile-nav-menu-toggle span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  margin-top: -1px;
-  background-color: #000000;
-  transition: all .5s;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  position: absolute;
-  top: 50%;
-  left: 9px;
-  right: auto;
-  bottom: auto;
-}
-
-.mobile-nav-menu-toggle span::before,
-.mobile-nav-menu-toggle span::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: inherit;
-  position: absolute;
-  left: 0;
-  transition: all .5s;
-}
-
-.mobile-nav-menu-toggle span::before {
-  top: -9px;
-}
-
-.mobile-nav-menu-toggle span::after {
-  bottom: -9px;
-}
-
-.mobile-nav-menu-toggle.is-clicked span {
-  background-color: rgba(255, 255, 255, 0);
-  transition: all .1s;
-}
-
-.mobile-nav-menu-toggle.is-clicked span::before,
-.mobile-nav-menu-toggle.is-clicked span::after {
-  background-color: rgb(0, 0, 0);
-}
-
-.mobile-nav-menu-toggle.is-clicked span::before {
+.header.sticked {
+  position: fixed;
   top: 0;
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
+  right: 0;
+  left: 0;
+  height: 70px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.mobile-nav-menu-toggle.is-clicked span::after {
-  bottom: 0;
-  -webkit-transform: rotate(225deg);
-  transform: rotate(225deg);
+section {
+  scroll-margin-top: 70px;
 }
 
-
-/* ------------------------------------------------------------------- 
- *  Responsive Toggle Menu
- * ------------------------------------------------------------------- */
-
-@media screen and (max-width:900px) {
-
-  #Register,
-  .navbar-nav {
-    display: none !important;
+/*--------------------------------------------------------------
+# Desktop Navigation
+--------------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 0;
   }
 
-  .mobile-nav-menu-toggle {
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .navbar li {
+    position: relative;
+  }
+
+  .navbar>ul>li {
+    white-space: nowrap;
+    padding: 10px 0 10px 28px;
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3px;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    color: black;
+    white-space: nowrap;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .navbar a:focus{
+    color: white;
+  }
+
+  .navbar a i,
+  .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+
+  .navbar>ul>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: blue;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .navbar a:hover:before,
+  .navbar li:hover>a:before,
+  .navbar .active:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>a {
+    color: blue;
+  }
+
+  .navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 28px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: white;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+
+  .navbar .dropdown ul li {
+    min-width: 50px;
+  }
+
+  .navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    color: black;
+  }
+
+  .navbar .dropdown ul a i {
+    font-size: 12px;
+  }
+
+  .navbar .dropdown ul a:hover,
+  .navbar .dropdown ul .active:hover,
+  .navbar .dropdown ul li:hover>a {
+    color: blue;
+  }
+
+  .navbar .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+
+  .navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+  }
+
+  .register-button{
+    left: 80px;
+  }
+
+  .register-button a{
+    color: white;
+    padding: 3px 10px;
+  }
+
+  .register-button:hover>a>strong{
+    color: white;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .mobile-nav-show,
+  .mobile-nav-hide {
+    display: none;
+  }
+}
+
+/*--------------------------------------------------------------
+# Mobile Navigation
+--------------------------------------------------------------*/
+@media (max-width: 1200px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 400px;
+    bottom: 0;
+    transition: 0.3s;
+    z-index: 9997;
+  }
+
+  .navbar ul {
+    position: absolute;
+    inset: 0;
+    padding: 50px 0 10px 0;
+    margin: 0;
+    background: white;
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 9998;
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: var(--font-primary);
+    font-size: 15px;
+    color: black;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navbar a i,
+  .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>a {
+    color: black;
+  }
+
+  .navbar .dropdown ul {
+    position: static;
+    display: none;
+    padding: 10px 0;
+    margin: 10px 20px;
+    transition: all 0.5s ease-in-out;
+    background-color: lightblue;
+    border: 1px solid lightcyan;
+    list-style: circle;
+  }
+
+  .navbar .dropdown>.dropdown-active,
+  .navbar .dropdown .dropdown>.dropdown-active {
     display: block;
   }
 
+  .mobile-nav-show {
+    color: rgba(255, 255, 255, 1);
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    z-index: 9999;
+    margin-right: 10px;
+  }
+
+  .mobile-nav-hide {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+  }
+
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+
+  .mobile-nav-active .navbar {
+    right: 0;
+  }
+
+  .mobile-nav-active .navbar:before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgb(173, 216, 230, 0.6);
+    z-index: 9996;
+  }
+
+  .register-button a{
+    color: white;
+  }
 }
-
-
-/* ------------------------------------------------------------------- 
- *  Responsive NavBar Menu
- * ------------------------------------------------------------------- */
-
-
-
-
 
 
 /*--------------------------------------------------------------

@@ -33,46 +33,35 @@
 
 
     <!-- ===========HEADER==========-->
-    <header id="header" style="background-color: #f8f9fa;">
-        <div class="container">
-            <nav id="navbar" class="navbar fixed-top navbar-expand-sm bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="/assets/img/favicon/favicon.png"
-                            alt="UPES CSA LOGO" width="65" height="65" class="d-inline-block align-top"></a>
-                    <div class="collapse navbar-collapse" id="navNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item"><a class="nav-link active custom-tab"
-                                    href="#"><strong>Home</strong></a></li>
-                            <li class="nav-item"><a class="nav-link custom-tab" href="#about"><strong>About</strong></a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link custom-tab"
-                                    href="#timeline"><strong>Journey</strong></a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link custom-tab" href="#team"><strong>Team</strong></a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link custom-tab"
-                                    href="#alumni"><strong>Alumni</strong></a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link custom-tab"
-                                    href="#alliance"><strong>Alliance</strong></a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link custom-tab"
-                                    href="#events"><strong>Events</strong></a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link custom-tab" href="#csr"><strong>CSR
-                                        Activities</strong></a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link custom-tab"
-                                    href="#contact"><strong>Contact</strong></a>
-                            </li>
-                        </ul><a id="Register" class="btn btn-primary shadow" role="button" href="/registration.html"
-                            target="_blank"><strong>Register</strong></a>
-                    </div>
-                    <a class="mobile-nav-menu-toggle" href="#" onclick="IsClicked(this)"><span>Menu</span></a>
-                </div>
+    <header id="header" class="header d-flex align-items-center">
+
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-center">
+          <a href="#" class="logo d-flex align-items-center">
+            <img src="assets/img/favicon/favicon.png" alt="CSA LOGO" height="70" width="70">
+          </a>
+          <div class="container-fluid justify-content-center d-flex">
+            <nav id="navbar" class="navbar">
+              <ul>
+                <li><a href="#"><strong>Home</strong></a></li>
+                <li><a href="#about"><strong>About</strong></a></li>
+                <li><a href="#timeline"><strong>Journey</strong></a></li>
+                <li><a href="#team"><strong>Team</strong></a></li>
+                <li><a href="#alumni"><strong>Alumni</strong></a></li>
+                <li><a href="#alliance"><strong>Alliance</strong></a></li>
+                <li><a href="#events"><strong>Events</strong></a></li>
+                <li><a href="#csr"><strong>CSR Activities</strong></a></li>
+                <li><a href="#contact"><strong>Contact</strong></a></li>
+                <li class="register-button"><a id="Register" class="btn btn-primary shadow" role="button" href="/registration.html"
+                  target="_blank"><strong>Register</strong></a></li>
+              </ul>
             </nav>
+          </div>
+          
+          <i class="mobile-nav-toggle mobile-nav-show bi bi-list" style="color: black;"></i>
+          <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" style="color: black;"></i>
+    
         </div>
-    </header>
+      </header>
     <!--========= Header End========-->
 
 
@@ -1486,7 +1475,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer d-flex justify-content-center">
+            <div class="footer d-flex justify-content-center pb-5">
                 <div class="footer-bottom pt-3 text-center" style="color: white;">
                     <strong>Copyright &copy; 2020 All rights reserved | Designed and
                         Developed by UPES CSA Technical Team</strong>
