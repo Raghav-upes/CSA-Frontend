@@ -174,6 +174,27 @@
     }
   });
 
+
+  /**
+   # Alumni slider
+   */
+   new Swiper('.team-slider', {
+    speed: 1000,
+    loop: false,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+
+  });
+
+
+
+
+
+
+
   /**
    * Animation on scroll
    */
