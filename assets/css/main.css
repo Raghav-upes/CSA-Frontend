@@ -183,10 +183,6 @@ section {
     visibility: hidden;
   }
 
-  .register-button {
-    left: 80px;
-  }
-
   .register-button a {
     color: white;
     padding: 3px 10px;
