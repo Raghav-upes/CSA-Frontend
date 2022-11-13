@@ -221,7 +221,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: white;
+    background: #d3eaf2a9;
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -252,17 +252,6 @@ section {
   .navbar .active:focus,
   .navbar li:hover>a {
     color: black;
-  }
-
-  .navbar .dropdown ul {
-    position: static;
-    display: none;
-    padding: 10px 0;
-    margin: 10px 20px;
-    transition: all 0.5s ease-in-out;
-    background-color: lightblue;
-    border: 1px solid lightcyan;
-    list-style: circle;
   }
 
   .navbar .dropdown>.dropdown-active,
@@ -304,7 +293,6 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgb(173, 216, 230, 0.6);
     z-index: 9996;
   }
 
